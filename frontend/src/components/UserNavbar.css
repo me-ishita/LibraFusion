@@ -1,0 +1,100 @@
+/* UserNavbar.css */
+
+.navbar {
+  width: 200%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-brand {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #ff6347;
+  transition: width 0.3s;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+}
+
+.navbar-brand:hover {
+  color: #ff6347;
+}
+
+.navbar-brand.active {
+  color: #ff6347;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.search-input {
+  width: 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  background-color: transparent;
+  color: white;
+}
+
+.search-input:focus {
+  width: 300px;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+  background-color: white;
+  color: black;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.search-btn:hover {
+  color: #66afe9;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

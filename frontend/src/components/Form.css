@@ -1,0 +1,120 @@
+/* Form.css */
+body{
+  background-image: url('../images/Form.jpg');
+}
+
+.form-container {
+  background-color: #edd163;
+  padding: 1.5rem; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Reduced max-width */
+  margin: 30px auto; /* Reduced margin */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem;
+  font-style: italic;
+  position: relative;
+}
+
+.form-container h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(90deg, #f0a500, #ff6f61);
+  border-radius: 2px;
+  animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  color: #020000;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.form-group button {
+  background: linear-gradient(90deg, #ff6f61, #f0a500);
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.form-group button:hover {
+  background: linear-gradient(90deg, #f0a500, #ff6f61);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #161616;
+}
+
+.form-container a {
+  color: #f0493a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-container a:hover {
+  color: #3b898e;
+}

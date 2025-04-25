@@ -1,0 +1,93 @@
+.book-details-bg {
+  min-height: 100vh;
+  background: url('../images/UserBooks.jpg') no-repeat center center fixed; /* Add your background image here */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: backgroundMove 10s infinite alternate;
+}
+
+.book-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 3rem;  /* Increase padding for larger size */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 85%;  /* Increase max-width for larger size */
+}
+
+.book-image-container {
+  flex: 1;
+  max-width: 200px;  /* Increase max-width for larger image */
+  margin-right: 2rem;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  flex: 2;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.book-info h2 {
+  font-size: 2.5rem;  /* Increase font size for the title */
+  color: #7a1e1e;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.book-info p {
+  font-size: 1.25rem;  /* Increase font size for the details */
+  color: #3e1255;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.borrow-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3e8c3e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.borrow-button:hover {
+  background-color: #274a67;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+@keyframes backgroundMove {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}

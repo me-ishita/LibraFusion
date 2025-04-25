@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.front-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.background-image {
+  background-image: url('./library-management.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  
+}
+
+.name {
+  font-size: 55px;
+  color: 
+  rgba(205, 230, 82, 0.719);
+  position: relative;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 5rem;
+  animation: slideIn 4s forwards;
+}
+
+.name::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #f0a500, transparent);
+  animation: gradientSlide 5s linear infinite;
+}
+
+.line1{
+  color: aquamarine;
+  font-size: 30px;
+  font-style: italic;
+  animation: slideIn 4s forwards;
+}
+
+.line2{
+  color: aquamarine;
+  font-size: 15px;
+  font-style: italic;
+  animation: slideIn 4s forwards;
+}
+
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn1 {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #c500cc;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  animation: slideIn 4s forwards;
+}
+
+.btn1:hover {
+  background-color: #a09245;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
