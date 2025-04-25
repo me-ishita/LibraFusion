@@ -1,0 +1,66 @@
+.adminhome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/AdminHome.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(102, 9, 9);
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+  }
+  
+  .adminhome-content {
+    background: rgba(231, 142, 142, 0.6);
+    padding: 40px;
+    border-radius: 8px;
+    transform: translateY(-100%); /* Start off-screen */
+  transition: transform 1.5s ease-in-out; /* Animation transition */
+  }
+  .h1{
+    color: rgb(112, 25, 25);
+    font-size: 30px;
+  }
+  .adminmeet{
+    color: rgb(102, 9, 9);
+    font-size: 40px;
+  }
+  .check{
+    color: rgb(67, 38, 124);
+    font-size: 15px;
+  }
+
+.adminhome-container.loaded .adminhome-content {
+  transform: translateY(0); /* Slide in to center */
+}
+.viewBook{
+    border: 2px solid brown;    
+    border-radius: 2px;
+    display: inline-block;
+    padding: 2px;
+}
+
+
+  @media (max-width: 768px) {
+    .adminhome-content {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 350px) {
+    .adminhome-content {
+      padding: 10px;
+    }
+    h1{
+      font-size: 14px;
+    }
+    .adminmeet{
+      color: rgb(78, 245, 189);
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,80 @@
+.userhome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/UserHome.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(92, 14, 14);
+    font-style: italic;
+    padding: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+  }
+  
+  .userhome-content {
+    background: rgba(231, 142, 142, 0.6);
+    padding: 40px;
+    border-radius: 8px;
+    transform: translateY(-100%); /* Start off-screen */
+  transition: transform 1.5s ease-in-out; /* Animation transition */
+  }
+  .h1{
+    color: rgb(112, 25, 25);
+    font-size: 30px;
+  }
+  .usermeet{
+    color: rgb(200, 245, 78);
+    font-size: 45px;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  .p{
+    color: rgb(16, 15, 101);
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+.userhome-container.loaded .userhome-content {
+  transform: translateY(0); /* Slide in to center */
+}
+.viewBook {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #ff6347;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.viewBook:hover {
+  background-color: transparent;
+  color: #ff6347;
+  border-color: #ff6347;
+}
+
+  @media (max-width: 768px) {
+    .userhome-content {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 350px) {
+    .userhome-content {
+      padding: 10px;
+    }
+    h1{
+      font-size: 14px;
+    }
+    .usermeet{
+      color: rgb(78, 245, 189);
+      font-size: 20px;
+    }
+    .viewBook {
+      margin-top: 10px;
+    }
+  }
+  

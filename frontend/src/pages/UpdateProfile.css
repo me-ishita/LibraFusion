@@ -1,0 +1,82 @@
+.update-profile-container {
+  background-image: url(../images/Profile.jpg);
+  background-size: cover;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.update-profile {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.update-profile h2 {
+  color: #ff6347;
+  /* Tomato color */
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ff6347;
+}
+
+.update-profile .form-group {
+  margin-bottom: 20px;
+}
+
+.update-profile .form-group label {
+  color: #333;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.update-profile .form-group input[type="text"],
+.update-profile .form-group input[type="email"],
+.update-profile .form-group input[type="tel"],
+.update-profile .form-group input[type="file"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+.update-profile .form-group input[type="text"]:focus,
+.update-profile .form-group input[type="email"]:focus,
+.update-profile .form-group input[type="tel"]:focus,
+.update-profile .form-group input[type="file"]:focus {
+  border-color: #ff6347;
+  outline: none;
+}
+
+.update-profile .form-group img {
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.update-profile button[type="submit"] {
+  background: linear-gradient(45deg, #ff6347, #ffa07a);
+  /* Gradient */
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.update-profile button[type="submit"]:hover {
+  background: linear-gradient(45deg, #ffa07a, #ff6347);
+  /* Reverse Gradient */
+}
